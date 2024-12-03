@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #e8f3ff; 
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin-top: 38px;
+    margin-left: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #123e72;
+}
+
+input {
+    padding: 0.3rem 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "nav nav main main main main main"
+    "nav nav aside aside section1 section1 section2"
+    "nav nav footer footer footer footer footer";
+}
+
+nav {
+    grid-area: nav;
+    width: 200px;
+    height: auto;
+    padding: 47px 0px;
+    margin-left: 40px;
+    background-color: #0052b4;
+}
+
+nav a {
+    display: block;
+    padding: 19px 53px;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: 20px;
+}
+
+nav a:hover {
+    background-color: #123e72;
+}
+
+nav .keluar{
+    color: #ffaf8a;
+}
+main {
+    grid-area: main;
+    width: 984;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0052b4;
+    margin-left: 1rem;
+}
+
+.title {
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.title p {
+    margin-top: 8px;
+}
+
+.profil img {
+    width: 150px;
+    height: 150px;
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+aside {
+    grid-area: aside;
+    width: 500px;
+    margin-left: 1rem;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+
+aside h3 {
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+aside img {
+    width: 450px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+
+.section1 {
+    grid-area: section1;
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 240px;
+}
+
+.matkul,
+.aktifitas {
+    background-color: #f0f7ff;
+}
+
+.section1 h3,
+.matkul,
+.section2 h3,
+.aktifitas {
+    margin: 10px;
+}
+
+.matkul p,
+.aktifitas p{
+ margin-top: 5px;
+ color: #0052d4;   
+}
+
+.section2 {
+    grid-area: section2;
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 240px;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 10px;
+    margin-left: 1rem;
+    width: 984px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+footer h3,
+p {
+    grid-area: footer;
+    margin-top: 10px;
+}
+
+footer p span {
+    color: black;
+    font-weight: bold;
+}
